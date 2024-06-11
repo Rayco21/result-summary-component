@@ -149,3 +149,21 @@ i {
     width: var(--bar-width);
   }
 }
+
+@media (width < 600px) {
+  body {
+    padding: 0;
+  }
+  main {
+    flex-direction: column;
+    max-width: 375px;
+  }
+  .result {
+    width: 100%;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+  }
+}
+.summary {
+  width: 100%;
+}
