@@ -28,7 +28,7 @@ const data = fetch("./data.json")
       attribute.style.setProperty("color", "var(--color)");
       attribute.classList.add(`${data[i].category.toLowerCase()}`);
       score.classList.add(`attribute-score`);
-      score.innerHTML = `<span class="score-number" style="font-weight: 800; color: hsl(224, 30%, 27%)"></span> / <spna style="color: hsl(241, 100%, 89%)">100</span>`;
+      score.innerHTML = `<span class="score-number" style="font-weight: 800; color: hsl(224, 30%, 27%)"></span> / <span style="color: hsl(241, 100%, 89%)">100</span>`;
       img.src = `${data[i].icon}`;
 
       attribute.appendChild(img);
