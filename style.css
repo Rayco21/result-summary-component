@@ -1,0 +1,151 @@
+:root {
+  --bar-width: 100%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 18px;
+}
+body {
+  font-family: "Hanken Grotesk", sans-serif;
+  padding: 13rem 0;
+}
+
+main {
+  width: 600px;
+  margin: auto;
+  display: flex;
+  box-shadow: 10px 10px 30px hsl(221, 100%, 96%);
+}
+
+i {
+  font-style: normal;
+}
+
+.result {
+  width: 50%;
+  padding: 1.5rem 2.75rem 2.5rem 2.75rem;
+  background-image: linear-gradient(
+    to bottom,
+    hsl(252, 100%, 67%),
+    hsl(241, 81%, 54%)
+  );
+  text-align: center;
+  border-radius: 25px;
+}
+.result-title {
+  margin-bottom: 1.5rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: hsl(241, 100%, 89%);
+}
+.score {
+  background-image: linear-gradient(
+    to bottom,
+    hsla(256, 72%, 46%, 1),
+    hsla(241, 72%, 46%, 0)
+  );
+  border-radius: 50%;
+  font-size: 0.8rem;
+  width: 9rem;
+  height: 9rem;
+  margin-inline: auto;
+  margin-bottom: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: hsl(241, 100%, 89%);
+}
+
+.score .average {
+  color: white;
+  font-size: 3.25rem;
+  font-weight: 700;
+  line-height: 1.1;
+}
+
+.performance-level {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: white;
+  margin-bottom: 0.75rem;
+}
+
+.feedback-text {
+  font-size: 0.8rem;
+  color: hsl(241, 100%, 89%);
+}
+
+.summary {
+  width: 50%;
+  padding: 1.5rem 1.85rem;
+}
+
+.summary-title {
+  color: hsl(224, 30%, 27%);
+  font-weight: 600;
+  font-size: 1.15rem;
+  margin-bottom: 1rem;
+}
+
+.attributes-list {
+  list-style: none;
+  margin-bottom: 2rem;
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+.attribute {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.8rem;
+  margin-bottom: 0.5rem;
+  border-radius: 8px;
+  position: relative;
+}
+
+.attribute > div:first-child {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+}
+
+.attribute img {
+  margin-right: 0.5rem;
+  width: 17.5px;
+}
+
+.summary button {
+  border: none;
+  width: 100%;
+  padding: 0.8rem 0;
+  border-radius: 30px;
+  background-color: hsl(224, 30%, 27%);
+  color: white;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+.summary button:hover {
+  cursor: pointer;
+  background-color: transparent;
+  background-image: linear-gradient(
+    to bottom,
+    hsl(252, 100%, 67%),
+    hsl(241, 81%, 54%)
+  );
+}
+
+@keyframes expand {
+  from {
+    width: 0;
+  }
+  to {
+    width: var(--bar-width);
+  }
+}
